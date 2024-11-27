@@ -134,10 +134,10 @@ export default function Index() {
             })
             Alert.alert('Nova viagem', 'Viagem criada com sucesso!')
             saveTrip(newtrip.tripId)
-            setIsCreatingTrip(false)
         } catch (error) {
             Alert.alert('Ops', 'Ocorreu um erro ao salvar a viagem. Tente novamente mais tarde.')
             console.log(error)
+            setIsCreatingTrip(false)
             throw error
         }
     }
